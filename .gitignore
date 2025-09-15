@@ -1,0 +1,16 @@
+# Служебная папка VS Code
+.vscode/
+
+# Файлы, создаваемые Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Файлы macOS (на всякий случай, если вдруг я буду работать на Mac)
+.DS_Store
+
+# Node modules (если буду использовать npm в будущем)
+node_modules/
+
+# Логи
+*.log

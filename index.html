@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Базовая конфигурация -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница визитка, портфолио">
+    <meta name="author" content="Sergio Maniani">
+    <title>Sergio Maniani &trade;</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Шрифты (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="slick.css"> <!-- если нужен до style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Иконки (можно перенести в конец body или подключить defer) -->
+    <script src="https://kit.fontawesome.com/de54510b32.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+
+	<!-- English -->
+	<div class="lang lang-en active">
+        <header>
+            <img class="logo" src="images/Frame_1bg.png" alt="logo">
+
+            <div class="nav">
+                <a href="#" class="scroll-link" data-target=".about-en">About me</a>
+                <a href="#" class="scroll-link" data-target=".skills-en">Skills</a>
+                <a href="#" class="scroll-link" data-target=".contacts-en">Contacts</a>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-button">Language</button>
+                <div class="dropdown-menu hidden">
+					<a href="#" data-lang="en">English</a>
+					<a href="#" data-lang="ua">Українська</a>
+					<a href="#" data-lang="ru">Русский</a>
+                </div>
+            </div>
+
+            <span class="menu show-menu">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </header>
+
+        <div class="hidden-menu">
+            <span class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About the Company</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <br>
+            <p>This is what your menu could look like</p>
+            <br>
+            <p>Or it can contain additional functionality</p>
+            <form action="" class="cases-form" autocomplete="off">
+                <h2>To-Do List</h2>
+                <input type="text" name="case" placeholder="Task">
+                <button class="add-btn" type="button">Add</button>
+                <button class="show-btn" type="button">Show</button>
+                <div class="cases-info">Item was added</div>
+            </form>
+
+            <section class="cases">
+                <div class="cases-div"></div>
+            </section>
+        </div>
+
+        <section class="full-page">
+            <div>
+                <h1>Welcome to my portfolio!</h1>
+                <h3>Here you can get acquainted with my skills in HTML, CSS, and JavaScript,  
+                    as well as appreciate my approach to creating web interfaces.  
+                    For now, only layout and interactivity are presented here,  
+                    but over time I will add full-fledged projects and links to them.  
+                </h3>
+                <h4>Thank you for your interest in my journey and skills.</h4>
+            </div>
+        </section>
+
+        <section class="about_me about-en">
+            <div>
+                <h2>About Me</h2>
+                <p>My name is Sergey, and I am a beginner Python developer.
+                    My path into IT did not start with computers,but with driving trucks and operating 
+                    locomotives. However, this life experience taught me key qualities that now help me
+                    in programming: attention to detail, perseverance, responsibility, and the ability to
+                    work according to clear algorithms.</p>
+                <h2><i>My Experience Before IT</i></h2>
+                <p>
+                    After graduating from technical school, I worked as a truck driver, then as an assistant
+                    train driver, and later completed training to become a locomotive engineer. The job was
+                    stable and responsible, but after 2014 the situation changed, and I decided to move to
+                    Europe.<br><br>
+                    There, I worked as a professional driver: strict schedules, constant travel, high 
+                    responsibility, and compliance with numerous requirements — all of this shaped my 
+                    discipline and stress resilience.
+                </p>
+                <h2>Transition into IT</h2>
+                <p>
+                    Although I had no prior experience in programming, my desire to grow and learn a new
+                    profession led me to take a Python development course. Now I can confidently say that
+                    I’ve found something that truly inspires me.
+                </p>
+                <p>
+                    After completing the Python Developer course, I created a diploma project that allowed
+                    me to apply the acquired knowledge in practice, and I received an official certificate.
+                </p>
+                <h2>What I can offer as a developer:</h2>
+                <p>
+                    &bull; A responsible approach — I am used to finishing what I start. <br>
+                    &bull; Analytical thinking — I can understand complex problems and find optimal
+                    solutions. <br>
+                    &bull; Willingness to learn and perseverance — I am ready to work through challenges
+                    until I find the right solution. <br>
+                    &bull; Experience in stressful situations — I know how to stay focused even under
+                    pressure.
+                </p>
+                <p>
+                    My journey in programming is just beginning, but I bring with me a rich life experience  
+                    that helps me adapt quickly and achieve results.
+                </p>
+                <h2>Current Stage</h2>
+                <p>I have completed an online course to become a Python developer.</p>
+                <p>I build websites using HTML, CSS, JavaScript, and Bootstrap.</p>
+				<p>I enjoy writing clean, structured code and creating layouts that are both clear and
+					user-friendly.
+                </p>
+				<p>I'm attentive to details and always strive to make interfaces not only
+					visually appealing but also practical.
+                </p>
+                <p>I’ve completed several training projects — from responsive landing pages and interactive
+					UI elements to fully functional web services using Django and Telegram bots.
+				</p>
+				<p>I'm looking for internship opportunities or my first commercial
+					projects to apply my skills	to real-world tasks, gain practical
+					experience, and continue growing as a full-stack web developer.
+				</p>
+            </div>
+        </section>
+        
+        <section class="features skills-en">
+            <h2>Skills</h2>
+            <div class="features">
+                <div>
+                    <i class="fa-brands fa-html5"></i> 
+                    <h4>HTML5</h4>
+                    <p>I create structured and semantic pages with clean, valid code.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i> 
+                    <h4>CSS3 / SCSS</h4>
+                    <p>I style interfaces with responsiveness and animations. I use SCSS for optimization.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-bootstrap"></i> 
+                    <h4>Bootstrap</h4>
+                    <p>I use Bootstrap 5 to quickly build responsive and mobile-friendly interfaces.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-js"></i> 
+                    <h4>jQuery</h4>
+                    <p>I create dynamic elements and interactivity using jQuery and plain JS.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h4>Python</h4>
+                    <p>Basic experience writing scripts and working with data. Used in academic projects.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-github"></i> 
+                    <h4>GitHub</h4>
+                    <p>I upload projects and use Git for version control and working with repositories.</p>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="skills">I can integrate plugins into the code, for example, a carousel using the Slick plugin</h2>
+        <section class="gallery">
+			<div class="slider">
+				<div><img src="images/img-html.jpg" alt=""></div>
+				<div><img src="images/img-CSS.jpg" alt=""></div>
+                <div><img src="images/img-JavaScript.jpg" alt=""></div>
+				<div><img src="images/img-bootstrap.jpg" alt=""></div>
+				<div><img src="images/img-jQuery.jpg" alt=""></div>
+				<div><img src="images/img-Python.png" alt=""></div>
+				<div><img src="images/img-GitHub.jpg" alt=""></div>
+                <div><img src="images/img-SQL.jpg" alt=""></div>
+			</div>
+        </section>
+        
+        <section class="bg-fixed">
+            <div class="projects">
+                <img src="images/diplom_en-small.jpg" alt="My diploma">
+                <div>
+                    <h2>Here will be links to my projects.</h2>
+                    <!--  <h2>View my projects</h2>
+                    <a href="#" target="_blank" rel="noopener noreferrer"> &bull; My Django project</a> -->
+                </div>
+            </div>
+        </section>
+
+        <footer class=" section contacts-en">
+        <div class="up-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <p>&copy; 2025 Sergio Maniani &bull; All rights reserved</p>
+
+            <div class="social">
+                <div>
+                    <a href="mailto:SergioManiani.dev@outlook.com" target="_blank">
+                        <i class="fa-solid fa-at"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/Sergio-Maniani" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://t.me/Sergio_Maniani" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+	
+	<!--Українська--> 
+	<div class="lang lang-ua">
+		<header>
+			<img class="logo" src="images/Frame_1bg.png" alt="logo">
+
+			<div class="nav">
+				<a href="#" class="scroll-link" data-target=".about-ua">Про мене</a>
+                <a href="#" class="scroll-link" data-target=".skills-ua">Навички</a>
+                <a href="#" class="scroll-link" data-target=".contacts-ua">Контакти</a>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropdown-button">Мова</button>
+				<div class="dropdown-menu hidden">
+					<a href="#" data-lang="en">English</a>
+					<a href="#" data-lang="ua">Українська</a>
+					<a href="#" data-lang="ru">Русский</a>
+				</div>
+			</div>
+
+			<span class="menu show-menu">
+				<i class="fa-solid fa-bars"></i>
+			</span>
+		</header>
+
+		<div class="hidden-menu">
+			<span class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+			<h2>Меню</h2>
+			<ul>
+				<li><a href="#">Головна</a></li>
+				<li><a href="#">Про компанію</a></li>
+				<li><a href="#">Послуги</a></li>
+			</ul>
+			<br>
+			<p>Так може виглядати ваше меню</p>
+			<br>
+			<p>Або може бути розміщений додатковий функціонал</p>
+			<form action="" class="cases-form" autocomplete="off">
+				<h2>Список справ</h2>
+				<input type="text" name="case" placeholder="Задание">
+				<button class="add-btn" type="button">Додати</button>
+				<button class="show-btn" type="button">Відобразити</button>
+				<div class="cases-info">Елемент був доданий</div>
+			</form>
+
+			<section class="cases">
+				<div class="cases-div"></div>
+			</section>
+		</div>
+
+		<section class="full-page">
+			<div>
+				<h1>Ласкаво запрошую до мого портфоліо!</h1>
+				<h3>Тут ви можете ознайомитися з моїми навичками роботи з HTML, CSS та JavaScript,  
+                    а також оцінити мій підхід до створення веб-інтерфейсів.  
+                    Наразі тут представлена лише верстка та інтерактивність,  
+                    але з часом я додам повноцінні проєкти та посилання на них.  
+                </h3>
+                <h4>Дякую за ваш інтерес до мого шляху та навичок.</h4>
+			</div>
+		</section>
+
+		<section class="about_me about-ua">
+			<div>
+				<h2>Про мене</h2>
+                <p>Мене звати Сергій, я початківець Python-розробник.
+                    Мій шлях у IT почався не з комп’ютерів, а з керування вантажівками та тепловозами.
+                    Але саме цей життєвий досвід навчив мене ключовим якостям, які зараз допомагають у
+                    програмуванні: уважність до деталей, наполегливість, відповідальність та вміння
+                    працювати за чітким алгоритмом.
+                </p>
+                <h2><i>Мій досвід до IT</i></h2>
+                <p>
+                    Після закінчення технікуму я працював водієм вантажівки, згодом — помічником машиніста,  
+                    а пізніше пройшов курси й став машиністом. Робота була стабільною та відповідальною,  
+                    але після 2014 року ситуація змінилася, та я вирішив виїхати до Європи.<br><br>
+                    Там я працював професійним водієм: жорсткий графік, постійні переїзди, високий рівень
+                    відповідальності та дотримання численних вимог — усе це сформувало в мені дисципліну
+                    та стресостійкість.
+                </p>
+                <h2>Перехід в IT</h2>
+                <p>
+                    Хоча я не мав досвіду в програмуванні, бажання розвиватися й опанувати нову професію  
+                    привело мене на курс з розробки на Python. Зараз я з упевненістю можу сказати, що
+                    знайшов справу, яка дійсно надихає.
+                </p>
+                <p>
+                    Після завершення курсу Python-розробника я розробив дипломний проєкт, який дозволив
+                    закріпити набуті знання на практиці, та отримав офіційний диплом.
+                </p>
+                <h2>Що я можу запропонувати як розробник:</h2>
+                <p>
+                    &bull; Відповідальний підхід — я звик доводити справу до кінця. <br>
+                    &bull; Аналітичне мислення — вмію розбиратися у складних завданнях та знаходити оптимальні
+                    рішення. <br>
+                    &bull; Навченість та посидючість — готовий працювати над задачами, поки не знайду
+                    правильне рішення. <br>
+                    &bull; Досвід роботи в стресових ситуаціях — вмію зберігати концентрацію навіть під
+                    тиском.
+                </p>
+                <p>
+                    Мій шлях у програмуванні лише починається, але за плечима маю багатий життєвий досвід,  
+                    який допомагає мені швидко адаптуватися й досягати результату.
+                </p>
+                <h2>На даному етапі</h2>
+				<p>Я закінчив онлайн-курс за спеціальністю Python-розробник.</p>
+				<p>Створюю сайти з використанням HTML, CSS, JavaScript та Bootstrap.</p>
+				<p>Люблю чистий, структурований код та зрозумілу верстку.</p>
+				<p>Уважний до деталей та прагну створювати інтерфейси, які не лише гарно виглядають,
+					а й зручні у використанні.
+                </p>
+				<p>
+                    Реалізував кілька навчальних проєктів — від адаптивних лендингів та інтерактивних
+					інтерфейсів до повноцінних веб-сервісів на Django та телеграм-ботів.
+				</p>
+				<p>
+                    Шукаю можливості для стажування або перших комерційних проєктів, щоб застосувати свої
+                    знання на практиці, отримати реальний досвід та продовжити розвиток як універсальний
+                    веб-розробник.
+				</p>
+			</div>
+		</section>
+
+		<section class="features skills-ua">
+			<h2>Навички</h2>
+			<div class="features">
+				<div>
+					<i class="fa-brands fa-html5"></i> 
+					<h4>HTML5</h4>
+					<p>Створюю структуровані и семантичні сторінки з чистим, валідным кодом.</p>
+				</div>
+
+				<div>
+					<i class="fa-brands fa-css3-alt"></i> 
+					<h4>CSS3 / SCSS</h4>
+					<p>Стилізую інтерфейси з адаптивністтю та анімаціями. Використовую SCSS для оптимізації.</p>
+				</div>
+
+				<div>
+					<i class="fa-brands fa-bootstrap"></i> 
+					<h4>Bootstrap</h4>
+					<p>Використовую Bootstrap 5 для швидкої вірстки адаптивних та мобільних інтерфейсів.</p>
+				</div>
+
+				<div>
+					<i class="fa-brands fa-js"></i> 
+					<h4>jQuery</h4>
+					<p>Пишу динамічні елементи та інтерактивність за допомоги jQuery та простого JS.</p>
+				</div>
+
+				<div>
+					<i class="fa-brands fa-python"></i>
+					<h4>Python</h4>
+					<p>Базовий досвід написання скриптів та роботи з данними. Використовував в навчальних проєктах.</p>
+				</div>
+
+				<div>
+					<i class="fa-brands fa-github"></i> 
+					<h4>GitHub</h4>
+					<p>Завантажую проєкти, використовую git для контролю версій та роботи з репозиторіями.</p>
+				</div>
+			</div>
+		</section>
+
+		<h2 class="skills">Можу інтегрувати плагіни в код, на приклад карусель прокрутку за допомогою плагіна slick</h2>
+		<section class="gallery">
+			<div class="slider">
+				<div><img src="images/img-html.jpg" alt=""></div>
+				<div><img src="images/img-CSS.jpg" alt=""></div>
+                <div><img src="images/img-JavaScript.jpg" alt=""></div>
+				<div><img src="images/img-bootstrap.jpg" alt=""></div>
+				<div><img src="images/img-jQuery.jpg" alt=""></div>
+				<div><img src="images/img-Python.png" alt=""></div>
+				<div><img src="images/img-GitHub.jpg" alt=""></div>
+                <div><img src="images/img-SQL.jpg" alt=""></div>
+			</div>
+		</section>
+
+		<section class="bg-fixed">
+            <div class="projects">
+                <img src="images/diplom_ukr-small.jpg" alt="Мій диплом">
+                <div>
+                    <h2>Тут будуть посилання на мої проєкти</h2>
+                    <!-- <h2>Перегляньте мої проєкти</h2>
+                    <a href="#" target="_blank" rel="noopener noreferrer"> &bull; Мій Django проєкт</a> -->
+                </div>
+            </div>
+		</section>
+
+		<footer class="contacts-ua">
+			<div class="up-btn">
+				<i class="fa-solid fa-arrow-up"></i>
+			</div>
+			<p> &copy; 2025 Sergio Maniani &bull; Всі права захищено</p>
+			<div class="social">
+                <div>
+                    <a href="mailto:SergioManiani.dev@outlook.com" target="_blank">
+                        <i class="fa-solid fa-at"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/Sergio-Maniani" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://t.me/Sergio_Maniani" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+		</footer>
+	</div>
+	
+	<!-- Русский--> 
+	<div class="lang lang-ru">
+        <header>
+            <img class="logo" src="images/Frame_1bg.png" alt="logo">
+
+            <div class="nav">
+                <a href="#" class="scroll-link" data-target=".about-ru">Обо мне</a>
+                <a href="#" class="scroll-link" data-target=".skills-ru">Навыки</a>
+                <a href="#" class="scroll-link" data-target=".contacts-ru">Контакты</a>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-button">Язык</button>
+                <div class="dropdown-menu hidden">
+                    <a href="#" data-lang="en">English</a>
+					<a href="#" data-lang="ua">Українська</a>
+					<a href="#" data-lang="ru">Русский</a>
+                </div>
+            </div>
+
+            <span class="menu show-menu">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </header>
+
+        <div class="hidden-menu">
+            <span class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+            <h2>Меню</h2>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+            </ul>
+            <br>
+            <p>Так может выглядеть ваше меню</p>
+            <br>
+            <p>Или может быть размещен дополнительный функционал</p>
+            <form action="" class="cases-form" autocomplete="off">
+                <h2>Список дел</h2>
+                <input type="text" name="case" placeholder="Задание">
+                <button class="add-btn" type="button">Добавить</button>
+                <button class="show-btn" type="button">Показать</button>
+                <div class="cases-info">Элемент был добавлен</div>
+            </form>
+
+            <section class="cases">
+                <div class="cases-div"></div>
+            </section>
+        </div>
+
+        <section class="full-page">
+            <div>
+                <h1>Добро пожаловать в моё портфолио!</h1>
+                <h3>Здесь вы можете познакомиться с моими навыками работы с HTML, CSS и JavaScript,
+                     а также оценить мой подход к созданию веб-интерфейсов. Пока что здесь представлена только верстка и интерактивность,
+                    но со временем я добавлю полноценные проекты и ссылки на них.
+				</h3>
+				<h4>Спасибо за интерес к моему пути и навыкам.</h4>
+            </div>
+        </section>
+
+        <section class="about_me about-ru">
+            <div>
+                <h2>Обо мне</h2>
+                <p>Меня зовут Сергей, я начинающий Python-разработчик. Мой путь в IT начался не с компьютеров,
+                    а с вождения грузовика и управления тепловозом. Но именно этот жизненный опыт научил 
+                    меня ключевым качествам, которые сейчас помогают в программировании: внимательность к 
+                    деталям, усидчивость, ответственность и умение работать по чёткому алгоритму.</p>
+                <h2><i>Мой опыт до IT</i></h2>
+                <p>После окончания техникума я работал водителем грузовика, затем — помощником машиниста,
+                    а позже прошёл курсы и стал машинистом. Работа была стабильной и ответственной,
+                    но после 2014 года ситуация изменилась, и я принял решение уехать в Европу.<br><br>
+                    Там я работал профессиональным водителем: строгие графики, постоянные переезды,
+                    высокая ответственность и соблюдение множества требований — всё это сформировало
+                    во мне дисциплину и стрессоустойчивость.
+                </p>
+                <h2>Переход в IT</h2>
+                <p>Несмотря на то, что я не имел опыта в программировании, желание развиваться и освоить
+                    новую профессию привело меня на курс Python-разработки. Сейчас я с уверенностью могу
+                    сказать, что нашёл дело, которое действительно вдохновляет.</p>
+                <p>После завершения курса Python-разработчик я разработал дипломный проект, который 
+                    позволил закрепить полученные знания на практике, и получил официальный диплом.</p>
+                <h2>Что я могу предложить как разработчик:</h2>
+                <p>
+                    &bull; Ответственный подход — я привык доводить дело до конца. <br>
+                    &bull; Аналитическое мышление — умею разбираться в сложных задачах и находить оптимальные
+                    решения. <br>
+                    &bull; Обучаемость и усидчивость — готов долго работать над задачей, пока не найду 
+                    правильное решение. <br>
+                    &bull; Опыт работы в стрессовых ситуациях — умею сохранять концентрацию даже под 
+                    давлением. 
+                </p>
+                <p>
+                    Мой путь в программировании только начинается, но за плечами у меня богатый жизненный 
+                    опыт, который помогает мне быстро адаптироваться и добиваться результата.
+                </p>
+                <h2>На данном этапе</h2>
+                <p>Создаю сайты с использованием HTML, CSS, JavaScript и Bootstrap.</p>
+                <p>Люблю чистый, структурированный код и аккуратную вёрстку.</p>
+                <p>Стараюсь делать интерфейсы не только визуально привлекательными, но и удобными для
+                    пользователей.</p>
+                <p>Реализовал несколько учебных проектов — от адаптивных лендингов и интерактивных UI до
+                    полноценных веб-сервисов на Django и телеграм-ботов.</p>
+                <p>Открыт к стажировкам и первым коммерческим задачам — хочу применять знания на практике,
+                    набираться опыта и развиваться как универсальный веб-разработчик.
+                </p>
+            </div>
+        </section>
+
+        <section class="features skills-ru">
+            <h2>Навыки</h2>
+            <div class="features">
+                <div>
+                    <i class="fa-brands fa-html5"></i> 
+                    <h4>HTML5</h4>
+                    <p>Создаю структурированные и семантические страницы с чистым, валидным кодом.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i> 
+                    <h4>CSS3 / SCSS</h4>
+                    <p>Стилизую интерфейсы с адаптивностью и анимациями. Использую SCSS для оптимизации.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-bootstrap"></i> 
+                    <h4>Bootstrap</h4>
+                    <p>Использую Bootstrap 5 для быстрой вёрстки адаптивных и мобильных интерфейсов.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-js"></i> 
+                    <h4>jQuery</h4>
+                    <p>Пишу динамичные элементы и интерактивность с помощью jQuery и простого JS.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h4>Python</h4>
+                    <p>Базовый опыт написания скриптов и работы с данными. Использовал в учебных проектах.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-github"></i> 
+                    <h4>GitHub</h4>
+                    <p>Загружаю проекты, использую git для контроля версий и работы с репозиториями.</p>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="skills">Могу внедрять плагины в код, например карусель прокрутки с помощью плагина slick</h2>
+        <section class="gallery">
+            <div class="slider">
+                <div><img src="images/img-html.jpg" alt=""></div>
+				<div><img src="images/img-CSS.jpg" alt=""></div>
+                <div><img src="images/img-JavaScript.jpg" alt=""></div>
+				<div><img src="images/img-bootstrap.jpg" alt=""></div>
+				<div><img src="images/img-jQuery.jpg" alt=""></div>
+				<div><img src="images/img-Python.png" alt=""></div>
+				<div><img src="images/img-GitHub.jpg" alt=""></div>
+                <div><img src="images/img-SQL.jpg" alt=""></div>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+
+        <section class="bg-fixed">
+            <div class="projects">
+                <img src="images/diplom_rus-small.jpg" alt="Мой диплом">
+                <div>
+                    <h2>Здесь будут ссылки на мои проекты</h2>
+                    <!-- <h2>Посмотрите мои проекты</h2>
+                    <a href="#" target="_blank" rel="noopener noreferrer"> &bull; Мой Django проект</a> -->
+                </div>
+            </div>
+        </section>
+
+        <footer class="contacts-ru">
+            <div class="up-btn">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <p> &copy; 2025 Sergio Maniani &bull; Все права защищены</p>
+            <div class="social">
+                <div>
+                    <a href="mailto:SergioManiani.dev@outlook.com" target="_blank">
+                        <i class="fa-solid fa-at"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/Sergio-Maniani" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://t.me/Sergio_Maniani" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  	<script src="slick.min.js"></script>
+  	<script src="index.js"></script>
+      
+</body>
+</html>
+
+<!--
+<a href="mailto:example@example.com?subject=Хочу%20сотрудничать&body=Здравствуйте!%20Меня%20заинтересовало%20ваше%20портфолио.">
+  Написать мне
+</a>
+subject= — тема письма
+
+body= — текст письма
+
+Пробелы заменяются на %20 или +
+
+-->
