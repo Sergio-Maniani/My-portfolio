@@ -5,6 +5,10 @@
     outline: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
     background: #fafafa;
     font-size: 16px;
@@ -244,9 +248,9 @@ header > .menu:hover {color: #4f4e4e;}
 }
 
 .full-page h1 {
-    padding-top: 250px;
-    font-size: 45px;
-    width: 500px;
+    padding-top: 140px;
+    font-size: 30px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -513,6 +517,13 @@ footer .social div i {
     width: 100%;
   }
 
+  header > .nav {
+    position: static;
+    top: 0;
+    right: 0;
+    margin: 10px 0;
+  }
+
   header > .logo {
     width: 150px;
   }
@@ -534,5 +545,33 @@ footer .social div i {
 
   footer .social div {
     margin: 0;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects div {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  .gallery {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .slider > div {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .slider > div img {
+    max-width: 90%;
+    height: auto;
   }
 }
