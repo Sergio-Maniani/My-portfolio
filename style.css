@@ -111,7 +111,7 @@ header > .menu {
 header > .menu:hover {color: #4f4e4e;}
 
 .fixed {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     border-bottom: 2px solid silver;
@@ -444,6 +444,10 @@ footer .social div i {
 
 /* ===== Медиа-запрос для планшетов и телефонов ===== */
 @media (max-width: 1024px) {
+  .fixed {
+    position: sticky;
+  }
+
   header > .nav {
     position: relative;
     right: 50px;
