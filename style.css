@@ -95,9 +95,7 @@ header > .nav a:hover {color: #4f4e4e;}
 	color: #fafafa;
 }
 
-.hidden {
-  	display: none;
-}
+.hidden {display: none;}
 
 /* Выезжающее меню */
 
